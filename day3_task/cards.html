@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .image-container {
+        display: flex;
+        gap: 5px;
+      }
+      .container {
+        display: flex;
+        gap: 5px;
+      }
+      .image-box {
+        position: relative;
+        display: inline-block;
+      }
+      .image-box img {
+        display: flex;
+        width: 300px;
+        height: auto;
+        padding: 5px;
+      }
+      .text-overlay {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container" style="margin: 10px">
+      <div class="image-box">
+        <img src="house5.jpg" />
+        <div class="text-overlay">Summer House</div>
+      </div>
+      <div class="image-box">
+        <img src="house2.jpg" />
+        <div class="text-overlay">Brick House</div>
+      </div>
+      <div class="image-box">
+        <img src="house3.jpg" />
+        <div class="text-overlay">Renovated</div>
+      </div>
+      <div class="image-box">
+        <img src="house4.jpg" />
+        <div class="text-overlay">Barn House</div>
+      </div>
+    </div>
+    <div class="container" style="margin: 10px">
+      <div class="image-box">
+        <img src="house2.jpg" />
+        <div class="text-overlay">Summer House</div>
+      </div>
+      <div class="image-box">
+        <img src="house5.jpg" />
+        <div class="text-overlay">Brick House</div>
+      </div>
+      <div class="image-box">
+        <img src="house4.jpg" />
+        <div class="text-overlay">Renovated</div>
+      </div>
+      <div class="image-box">
+        <img src="house3.jpg" />
+        <div class="text-overlay">Barn House</div>
+      </div>
+    </div>
+  </body>
+</html>
