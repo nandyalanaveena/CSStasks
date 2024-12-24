@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+      }
+      .navbar {
+        height: auto;
+        background: black;
+        overflow: auto;
+        white-space: nowrap;
+      }
+      .navbar a {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: green;
+      }
+      .navbar a::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: 0.3s;
+      }
+      .navbar a:hover::before {
+        width: 100%;
+      }
+      .image-container {
+        display: flex;
+        gap: 5px;
+      }
+      .container {
+        display: flex;
+        gap: 5px;
+      }
+      .image-box {
+        position: relative;
+        display: inline-block;
+      }
+      .image-box img {
+        display: flex;
+        width: 250px;
+        height: auto;
+        padding: 5px;
+      }
+      .text-overlay {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JAVASCRIPT</a>
+      <a href="#">SQL</a>
+      <a href="#">JAVA</a>
+      <a href="#">PHP</a>
+      <a href="#">HOW TO</a>
+      <a href="#">W3.CSS</a>
+      <a href="#">C</a>
+      <a href="#">C++</a>
+      <a href="#">C#</a>
+      <a href="#">BOOTSTRAP</a>
+      <a href="#">REACT</a>
+      <a href="#">MYSQL</a>
+      <a href="#">JQUERY</a>
+      <a href="#">EXCEL</a>
+      <a href="#">XML</a>
+      <a href="#">DJANGO</a>
+      <a href="#">NUMPY</a>
+      <a href="#">PANDAS</a>
+      <a href="#">NODEJS</a>
+      <a href="#">R</a>
+      <a href="#">TYPESCRIPT</a>
+      <a href="#">ANGULAR</a>
+      <a href="#">GIT</a>
+      <a href="#">MONGODB</a>
+    </nav>
+    <div class="image-container" style="margin-left: 150px; margin-top: 100px">
+      <div class="image-box">
+        <img src="house5.jpg" />
+        <div class="text-overlay">Summer House</div>
+      </div>
+      <div class="image-box">
+        <img src="house2.jpg" />
+        <div class="text-overlay">Brick House</div>
+      </div>
+      <div class="image-box">
+        <img src="house3.jpg" />
+        <div class="text-overlay">Renovated</div>
+      </div>
+      <div class="image-box">
+        <img src="house4.jpg" />
+        <div class="text-overlay">Barn House</div>
+      </div>
+    </div>
+    <div class="container" style="margin-left: 150px">
+      <div class="image-box">
+        <img src="house2.jpg" />
+        <div class="text-overlay">Summer House</div>
+      </div>
+      <div class="image-box">
+        <img src="house5.jpg" />
+        <div class="text-overlay">Brick House</div>
+      </div>
+      <div class="image-box">
+        <img src="house4.jpg" />
+        <div class="text-overlay">Renovated</div>
+      </div>
+      <div class="image-box">
+        <img src="house3.jpg" />
+        <div class="text-overlay">Barn House</div>
+      </div>
+    </div>
+  </body>
+</html>
